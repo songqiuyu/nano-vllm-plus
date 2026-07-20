@@ -5,11 +5,11 @@ from tqdm.auto import tqdm
 from transformers import AutoTokenizer
 import torch.multiprocessing as mp
 
-from nanovllm.config import Config
-from nanovllm.sampling_params import SamplingParams
-from nanovllm.engine.sequence import Sequence
-from nanovllm.engine.scheduler import Scheduler
-from nanovllm.engine.model_runner import ModelRunner
+from nanovllm_plus.config import Config
+from nanovllm_plus.sampling_params import SamplingParams
+from nanovllm_plus.engine.sequence import Sequence
+from nanovllm_plus.engine.scheduler import Scheduler
+from nanovllm_plus.engine.model_runner import ModelRunner
 
 
 class LLMEngine:

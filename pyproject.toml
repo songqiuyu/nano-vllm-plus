@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nano-vllm-plus"
+version = "0.1.0"
+description = "A compact, research-oriented extension of nano-vLLM"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = "MIT"
+dependencies = [
+    "torch>=2.4.0",
+    "triton>=3.0.0",
+    "transformers>=4.51.0",
+    "flash-attn",
+    "xxhash",
+]
+
+[project.urls]
+Repository = "https://github.com/GeeeekExplorer/nano-vllm"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nanovllm_plus*"]

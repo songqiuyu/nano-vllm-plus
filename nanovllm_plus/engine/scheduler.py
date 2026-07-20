@@ -1,8 +1,8 @@
 from collections import deque
 
-from nanovllm.config import Config
-from nanovllm.engine.sequence import Sequence, SequenceStatus
-from nanovllm.engine.block_manager import BlockManager
+from nanovllm_plus.config import Config
+from nanovllm_plus.engine.sequence import Sequence, SequenceStatus
+from nanovllm_plus.engine.block_manager import BlockManager
 
 
 class Scheduler:
